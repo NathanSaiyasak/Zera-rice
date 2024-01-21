@@ -1148,6 +1148,12 @@ footer {
         gap: 30px;
     } 
 
+/*-----Footer-----*/
+    .index-footer {
+        padding: 50px;
+    }
+
+
 }
 
 @media only screen and (max-width: 390px) {
