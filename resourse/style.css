@@ -1125,6 +1125,10 @@ footer {
         align-items: center;
     }
 
+    .value-icon {
+        margin-right: 0;
+    }
+
     .value-text {
         text-align: center;
     }
