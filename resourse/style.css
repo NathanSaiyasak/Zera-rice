@@ -307,6 +307,10 @@ nav {
     padding-right: 30px;
 }
 
+.list-box-explore {
+    display: none;
+}
+
 .list-box-explore > a {
     position: relative;
     z-index: 51;
