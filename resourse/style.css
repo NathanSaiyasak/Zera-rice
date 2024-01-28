@@ -601,7 +601,7 @@ nav {
 /* -------- Footer Set-up -------- */
 
 footer {
-    padding: 40px;
+    padding: 70px;
 }
 
 .index-footer {
@@ -1129,6 +1129,10 @@ footer {
         align-items: center;
     }
 
+    .value-icon {
+        margin-right: 0;
+    }
+
     .value-text {
         text-align: center;
     }
@@ -1151,6 +1155,12 @@ footer {
         flex-direction: column;
         gap: 30px;
     } 
+
+/*-----Footer-----*/
+    .index-footer {
+        padding: 50px;
+    }
+
 
 }
 
