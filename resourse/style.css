@@ -40,6 +40,7 @@ body {
 .ypmd-hero,
 .ypmd-intro-box,
 .your-contribution,
+.strengthening-comm,
 footer {
     position: relative;
     top: 71px;
@@ -670,11 +671,13 @@ nav {
 }
 
 .your-contribution-container {
-    padding: 50px;
+    padding: 80px;
+    background-color: #eee;
 }
 
 .your-contribution-heading-container > h3 {
     font-size: 2rem;
+    font-weight: 800;
 }
 
 .your-contribution-heading-container > p {
@@ -689,17 +692,17 @@ nav {
 .your-contribution-box-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .yc-box-container {
     background-color: #fafafa;
     border-radius: 30px;
-    padding: 15px;
+    padding: 20px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
-
+    box-shadow: 0px 0px 65px -35px rgba(0, 0, 0, 0.25);
 }
 
 .yc-box-text > h4 {
@@ -754,7 +757,6 @@ nav {
 
 .yc-box-text-2 {
     text-align: right;
-    margin-right: 20px;
     padding-left: 30px;
 }
 
@@ -771,12 +773,111 @@ nav {
 }
 
 
+/* -------- Strengthening Set-up -------- */
 
 
+.strengthening-comm-container {
+    background-color: #fafafa;
+    padding: 80px;
+}
 
+.strengthening-comm-heading {
+    margin-bottom: 35px;
+}
 
+.strengthening-comm-heading-container > h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
 
+.strengthening-comm-heading-container > p {
+    font-weight: 600;
+    margin-top: 10px;
+}
 
+.strengthening-comm-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sc-box-container {
+    background-color: #eeeeee;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.sc-box-imges {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 20px;
+}
+
+.sc-box-img {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 15px;
+}
+
+.sc-box-img-1 {
+    background: url('./img/sc-tsunami-img-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-img-1-2 {
+    background: url('./img/sc-tsunami-img-1-2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-img-2 {
+    background: url('./img/sc-sport-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-img-2-2 {
+    background: url('./img/sc-sport-2-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-img-3 {
+    background: url('./img/sc-festival-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-img-3-2 {
+    background: url('./img/sc-festival-3-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc-box-text {
+    padding: 10px 20px 20px;
+}
+
+.sc-box-text > h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sc-box-text > p {
+    font-weight: 600;
+}
 
 /* -------- Footer Set-up -------- */
 
@@ -1003,6 +1104,67 @@ footer {
     }
 }
 
+@media only screen and (max-width: 882px) {
+/*-----Default-----*/
+    .contact-info-left-textbox-1 > p:first-child,
+    .contact-info-left-textbox-2 > p:first-child,
+    .contact-info-right-textbox-1 > p:first-child {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .contact-info-left-textbox-1 > p:last-child,
+    .contact-info-left-textbox-2 > p:last-child,
+    .contact-info-right-textbox-1 > p:last-child {
+        line-height: 130%;
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+
+    .contact-info-right-textbox-2 > P {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 0.785rem;
+    }
+
+/*-----Strengthening-Comm-----*/
+    .sc-box-imges {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+/*-----Your Contribution-----*/
+    .yc-box-container {
+        display: block;
+        align-items: center;
+    }
+    .yc-box-text {
+        margin: 20px 0;
+    }
+    .yc-box-text > h4 {
+        margin-bottom: 5px;
+    }
+    .yc-box-text > p {
+        margin-bottom: 25px;
+    }
+    .yc-box-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    } 
+    .yc-box-img-2 {
+        width: 100%;
+    }
+    .yc-box-text-2 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+}
+
 @media only screen and (max-width: 800px) {
 /*-----Our Product-----*/
     .product-index-container {
@@ -1094,33 +1256,6 @@ footer {
     }
 }
 
-@media only screen and (max-width: 882px) {
-/*-----Default-----*/
-    .contact-info-left-textbox-1 > p:first-child,
-    .contact-info-left-textbox-2 > p:first-child,
-    .contact-info-right-textbox-1 > p:first-child {
-        font-weight: 700;
-        font-size: 1rem;
-        margin-bottom: 3px;
-    }
-
-    .contact-info-left-textbox-1 > p:last-child,
-    .contact-info-left-textbox-2 > p:last-child,
-    .contact-info-right-textbox-1 > p:last-child {
-        line-height: 130%;
-        font-weight: 500;
-        font-size: 0.875rem;
-    }
-
-    .contact-info-right-textbox-2 > P {
-        font-style: italic;
-        font-weight: 600;
-        font-size: 0.785rem;
-    }
-
-}
-
-
 @media only screen and (max-width: 670px) {
 /*-----Default-----*/
     nav {
@@ -1132,26 +1267,30 @@ footer {
     }
 }
 
+@media only screen and (max-width: 555px) {
+/*-----Your Contribution-----*/
+    .your-contribution-container {
+       padding: 50px; 
+    }
+    .your-contribution-heading-container > h3 {
+        font-size: 1.85rem;
+    }
+
+/*-----Strengthening Community-----*/
+    .strengthening-comm-container {
+        padding: 50px;
+    }
+    .strengthening-comm-heading-container > h3 {
+        font-size: 1.85rem;
+    }
+}
+
 @media only screen and (max-width: 550px) {
 /*-----Our Product-----*/
     .product-index-left {
         padding: 20px 0 20px 0;
         max-width: 80%;
     }
-}
-
-@media only screen and (max-width: 500px) {
-/*-----Index Hero-----*/
-    .index-hero-container {
-        min-height: 400px;
-    }
-
-/*-----List Box-----*/
-    .list-box-left {
-        min-height: 150px;
-        min-width: 100px;
-    }
-
 }
 
 @media only screen and (max-width: 517px) {
@@ -1338,15 +1477,109 @@ footer {
     .index-footer {
         padding: 50px;
     }
-
-
 }
 
-@media only screen and (max-width: 390px) {
-/*-----Our Product-----*/
-    .product-index-left {
+@media only screen and (max-width: 500px) {
+/*-----Index Hero-----*/
+    .index-hero-container {
+        min-height: 400px;
+    }
+
+/*-----List Box-----*/
+    .list-box-left {
+        min-height: 150px;
+        min-width: 100px;
+    }
+
+/*-----YPMD-----*/
+    .ypmd-hero-container{
+        padding: 40px;
+        min-height: 350px;
+    }
+    .ypmd-hero-message {
+        font-size: 2.75rem;
+    }
+    .ypmd-intro-text > h2 {
+        font-size: 1rem;
+        line-height: 160%;
+    }
+
+/*-----Your Contribution-----*/
+    .your-contribution-heading-container > h3 {
+        font-size: 1.5rem;
+    }
+    .your-contribution-heading-container > p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .yc-box-img {
+        min-height: 250px;
+    }
+    .yc-box-text > h4 {
+        font-size: 1.25rem;
+    }
+    .yc-box-text > p {
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .learn-more-btn > a {
+        font-size: 1rem;
+        padding: 7px 11px;
+    }
+
+/*-----Your Contribution-----*/
+    .strengthening-comm-heading-container > h3 {
+        font-size: 1.5rem;
+    }
+    .strengthening-comm-heading-container > p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+/*-----Your Contribution-----*/
+    .sc-box-img {
+        min-height: 250px;
+    }
+    .sc-box-text > h4 {
+        font-size: 1.25rem;
+    }
+    .sc-box-text > p {
+        font-weight: 500;
+    }
+    .sc-box-text {
         padding: 0;
-        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+/*-----YPMD-----*/
+    .ypmd-hero-message {
+        font-size: 2.5rem;
+    }
+    .ypmd-intro-box {
+        padding: 30px;
+    }
+    .flower-4 {
+        bottom: 30px;
+        left: 30px;
+    }
+    .flower-5 {
+        top: 30px;
+        right: 30px;
+    }
+
+/*-----Your Contribution-----*/
+    .your-contribution-container {
+        padding: 30px;
+    }
+
+/*-----Strengthen Community-----*/
+    .strengthening-comm-container {
+        padding: 30px;
+    }
+
+/*-----Footer-----*/
+    .index-footer {
+        padding: 40px;
     }
 }
 
@@ -1354,6 +1587,16 @@ footer {
 /*-----List Box-----*/
     .list-box-explore > a {
         width: 50%;
+    }
+
+/*-----YPMD-----*/
+    .ypmd-intro-text > h2 {
+        font-size: 0.875rem;
+    }
+
+    .product-index-left {
+        padding: 0;
+        width: 100%;
     }
 }
 
