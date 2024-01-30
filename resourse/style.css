@@ -1554,6 +1554,8 @@ footer {
 /*-----YPMD-----*/
     .ypmd-hero-message {
         font-size: 2.5rem;
+        font-size: 700;
+        line-height: 110%;
     }
     .ypmd-intro-box {
         padding: 30px;
@@ -1570,6 +1572,11 @@ footer {
 /*-----Your Contribution-----*/
     .your-contribution-container {
         padding: 30px;
+    }
+
+    .learn-more-btn > a {
+        color: #fafafa;
+        background-color: #D6B67C;
     }
 
 /*-----Strengthen Community-----*/
@@ -1592,6 +1599,7 @@ footer {
 /*-----YPMD-----*/
     .ypmd-intro-text > h2 {
         font-size: 0.875rem;
+        font-weight: 700;
     }
 
     .product-index-left {
