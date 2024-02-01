@@ -28,7 +28,7 @@ body {
 #list-box,
 #product-index,
 #ypmd-hero,
-#index-footer {
+#footer {
     scroll-margin-top: 120px;
 }
 
@@ -879,8 +879,167 @@ nav {
     font-weight: 600;
 }
 
-/* -------- Footer Set-up -------- */
+/* -------- Footer Set-up V.2-------- */
 
+footer {
+    background-color: #293338;
+    color: #fafafa;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px;
+}
+
+.ntc-logo {
+    background-image: url('./img/ntc-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 58.557px;
+    padding: 70px 70px 0;
+}
+
+.footer-info-main {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.footer-info-box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-info-box-left-text-1 > h4,
+.footer-info-box-left-text-2 > h4 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.footer-info-box-left-text-1 > p,
+.footer-info-box-left-text-2 > p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 130%;
+    display: flex;
+}
+
+.footer-info-box-right {
+    width: 50%;
+}
+
+.footer-info-box-right-text-1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.footer-info-box-right-text-1 > h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-contact-info-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.footer-contact-info-container > a {
+    text-decoration: none;
+}
+
+.footer-contact-info-box-1,
+.footer-contact-info-box-2,
+.footer-contact-info-box-3 {
+    padding: 10px 12px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.footer-contact-info-box-1 {
+    background-color: #fafafa;
+}
+
+.footer-contact-info-box-2,
+.footer-contact-info-box-3 {
+    background-color: #60D972;
+}
+
+.footer-contact-info-box-1 > p {
+    color: #293338;
+    font-weight: 600;  
+}
+
+.footer-contact-info-box-2 > p,
+.footer-contact-info-box-3 > p {
+    color: #fafafa;
+    font-weight: 600;  
+}
+
+.footer-contact-info-box-1:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+    transition: 0.2s ease-out;
+}
+
+.footer-contact-info-box-2:hover,
+.footer-contact-info-box-3:hover {
+    cursor: pointer;
+    background-color: #06c755;
+    transition: 0.2s ease-out;
+}
+
+.footer-email-icon {
+    background: url('./img/email-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 27.922px;
+    height: 21px;
+}
+
+.footer-whatsapp-icon {
+    background: url('./img/whatsapp-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+}
+
+.footer-line-icon {
+    background: url('./img/line-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22.041px;
+    height: 21px;
+}
+
+.footer-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.footer-mark > p {
+    font-size: 0.785rem;
+    color: #293338;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* -------- Footer Set-up -------- */
+/*
 footer {
     padding: 70px;
 }
@@ -934,7 +1093,7 @@ footer {
     font-weight: 600;
     font-size: 0.85rem;
 }
-
+*/
 /* -------- Special Set-up -------- */
 
 /* Topic Title */
@@ -1209,6 +1368,36 @@ footer {
     }
 }
 
+@media only screen and (max-width: 775px) {
+/*-----Footer-----*/
+    .ntc-logo {
+        width: 205px;
+        height: 41px;
+        padding: 0;
+    }
+
+    .footer-info-box-left-text-1 > h4,
+    .footer-info-box-left-text-2 > h4 {
+        font-size: 1rem;
+    }
+
+    .footer-info-box-left-text-1 > p,
+    .footer-info-box-left-text-2 > p {
+        font-size: 0.875rem;
+    }
+
+    .footer-info-box-right-text-1 > h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-contact-info-box-1 > p,
+    .footer-contact-info-box-2 > p,
+    .footer-contact-info-box-3 > p {
+        font-size: 0.785rem;
+    }
+}
+
 @media only screen and (max-width: 755px) {
 /*-----Mission-----*/
     .mission-img {
@@ -1264,6 +1453,53 @@ footer {
     .mobile-nav {
         display: block;
         animation: initial-opacity 1s ease;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+/*-----Footer-----*/
+    .footer-contact-info-container {
+        width: 100%;
+    }
+
+    .footer-contact-info-box-1,
+    .footer-contact-info-box-2,
+    .footer-contact-info-box-3 {
+        padding: 8px 10px 8px 8px;
+    }
+
+    .footer-email-icon {
+        width: 22.677px;
+        height: 17.055px;
+    }
+
+    .footer-whatsapp-icon {
+        width: 17.055px;
+        height: 17.055px;
+    }
+
+    .footer-line-icon {
+        width: 17.901px;
+        height: 17.055px;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .footer-info-main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-info-box-left-text-1 > h4,
+    .footer-info-box-left-text-2 > h4,
+    .footer-info-box-left-text-3 > h4 {
+        font-size: 1.25rem;
+    }
+
+    .footer-info-box-left-text-1 > p,
+    .footer-info-box-left-text-2 > p,
+    .footer-info-box-left-text-3 > p {
+        font-size: 1rem;
     }
 }
 
@@ -1474,9 +1710,6 @@ footer {
     } 
 
 /*-----Footer-----*/
-    .index-footer {
-        padding: 50px;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1585,8 +1818,27 @@ footer {
     }
 
 /*-----Footer-----*/
-    .index-footer {
+    .footer-info-container {
         padding: 40px;
+    }
+
+    .footer-contact-info-container {
+        width: 200%;
+    }
+
+    .footer-info-box-left-text-1 > h4,
+    .footer-info-box-left-text-2 > h4,
+    .footer-info-box-left-text-3 > h4 {
+        font-size: 1rem;
+    }
+
+    .footer-info-box-left-text-1 > p,
+    .footer-info-box-left-text-2 > p {
+        font-size: 0.875rem;
+    }
+
+    .footer-info-box-right-text-1 > h4 {
+        font-size: 1.25rem;
     }
 }
 
@@ -1605,6 +1857,16 @@ footer {
     .product-index-left {
         padding: 0;
         width: 100%;
+    }
+
+/*-----YPMD-----*/
+    .ntc-logo {
+        width: 155px;
+        height: 31px;
+    }
+/*-----Footer-----*/
+    .footer-info-main {
+        gap: 30px;
     }
 }
 
