@@ -58,6 +58,29 @@ footer {
     animation: initial-opacity 1s ease;
 }
 
+/* -------- Default Set-up -------- */
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.golden-color {
+    color: #D6B67C;
+}
+
+
 /* -------- Nav Set-up -------- */
 
 nav {
@@ -322,7 +345,6 @@ nav {
 }
 
 .text-box-right > p {
-    font-weight: 600;
     line-height: 180%;
     font-size: 1rem;
     padding-right: 30px;
@@ -2241,44 +2263,49 @@ footer {
 
 /*-----Your Contribution-----*/
     .your-contribution-heading-container > h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .your-contribution-heading-container > p {
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-weight: 500;
+        line-height: 160%;
     }
     .yc-box-img {
         min-height: 250px;
     }
     .yc-box-text > h4 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
     .yc-box-text > p {
-        font-size: .875rem;
+        font-size: 0.75rem;
         font-weight: 500;
+        line-height: 150%;
     }
     .learn-more-btn > a {
-        font-size: 1rem;
+        font-size: 0.75rem;
         padding: 7px 11px;
     }
 
 /*-----Your Contribution-----*/
     .strengthening-comm-heading-container > h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .strengthening-comm-heading-container > p {
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-weight: 500;
+        line-height: 160%;
     }
 /*-----Your Contribution-----*/
     .sc-box-img {
         min-height: 250px;
     }
     .sc-box-text > h4 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
     .sc-box-text > p {
+        font-size: 0.75rem;
         font-weight: 500;
+        line-height: 150%;
     }
     .sc-box-text {
         padding: 0;
@@ -2295,7 +2322,6 @@ footer {
 /*-----YPMD-----*/
     .ypmd-hero-message {
         font-size: 2.5rem;
-        font-size: 700;
         line-height: 110%;
     }
     .ypmd-intro-box {
@@ -2426,7 +2452,7 @@ footer {
 /*-----YPMD-----*/
     .ypmd-intro-text > h2 {
         font-size: 0.875rem;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .product-index-left {
@@ -2442,6 +2468,9 @@ footer {
 /*-----Footer-----*/
     .footer-info-main {
         gap: 30px;
+    }
+    .footer-mark > p {
+        font-size: 0.675rem;
     }
 }
 
