@@ -1,47 +1,27 @@
-function clickMe() {
-    let message = document.getElementById("message");
 
-    let val = 1;
-    val = Math.floor(Math.random() * 8) + 1;
-    switch(val) {
-        case 1:
-            console.log('こんにちは')
-            $("#message").html("こんにちは");
-            break
-        case 2:
-            console.log('你好')
-            $("#message").html("你好");
-            break
-        case 3:
-            console.log('ສະບາຍດີ')
-            $("#message").html("ສະບາຍດີ");
-            break
-        case 4:
-            console.log('안녕하세요')
-            $("#message").html("안녕하세요");
-            break
-        case 5:
-            console.log('Olá')
-            $("#message").html("Olá");
-            break
-        case 6:
-            console.log('Bonjour')
-            $("#message").html("Bonjour");
-            break
-        case 7:
-            console.log('Καλημέρα')
-            $("#message").html("Καλημέρα");
-            break
-        case 8:
-            console.log('สวัสดี')
-            $("#message").html("สวัสดี");
-            break
-        default:
-            console.log('#$%(*@+0')
-            $("#message").html("#$%(*@+0");
-            break
-    };
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+    const navLinks = document.querySelectorAll('.nav-b');
+    const menuToggle = document.getElementById('prevent');
+    const menu = document.getElementById('menu');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuToggle.checked = false;
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        // Check if the click was outside the menu and if the menu is open
+        if (!menu.contains(e.target) && !menuToggle.contains(e.target) && menuToggle.checked) {
+            menuToggle.checked = false;
+        }
+    });
+
+    // Prevent the document click listener from triggering when clicking on the menu
+    menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
 
 const appearOptions = {
     threshold: 0.1
@@ -63,3 +43,63 @@ appearOptions);
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
+
+/* 
+function btnFunction() {
+    var x = document.getElementById("circle-btn-1");
+    if (x.classList.contains("visible")) {
+        x.classList.remove("visible");
+        setTimeout(() => { x.style.display = "none"; }, 500); // Hide after 500ms
+    } else {
+        x.style.display = "block"; // Show immediately
+        x.classList.add("visible");
+    }
+}
+*/
+
+function toggleButton(buttonIdToShow, buttonIdToHide) {
+    var buttonToShow = document.getElementById(buttonIdToShow);
+    var buttonToHide = document.getElementById(buttonIdToHide);
+
+    // Hide the button that needs to be hidden
+    buttonToHide.classList.remove("visible");
+    setTimeout(() => { buttonToHide.style.display = "none"; }, 0); // Use the same duration as CSS transition
+
+    // Toggle visibility of the button to show
+    if (!buttonToShow.classList.contains("visible")) {
+        buttonToShow.style.display = "block";
+        setTimeout(() => { buttonToShow.classList.add("visible"); }, 0.2);
+    }
+}
+
+function btnFunction1() {
+    toggleButton("circle-btn-1", "circle-btn-2");
+}
+
+function btnFunction2() {
+    toggleButton("circle-btn-2", "circle-btn-1");
+}
+
+function btnFunction3() {
+    toggleButton("circle-btn-3", "circle-btn-4");
+}
+
+function btnFunction4() {
+    toggleButton("circle-btn-4", "circle-btn-3");
+}
+
+function btnFunction5() {
+    toggleButton("circle-btn-5", "circle-btn-6");
+}
+
+function btnFunction6() {
+    toggleButton("circle-btn-6", "circle-btn-5");
+}
+
+function btnFunction7() {
+    toggleButton("circle-btn-7", "circle-btn-8");
+}
+
+function btnFunction8() {
+    toggleButton("circle-btn-8", "circle-btn-7");
+}

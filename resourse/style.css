@@ -23,11 +23,16 @@ body {
 #ypmd {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(186deg, #FAE5B3 0%, #EAC97E 100%), #FFF;
 }
+
+#our-product {
+    background-color: #fafafa;
+}
     
 #index-hero,
 #list-box,
 #product-index,
 #ypmd-hero,
+#our-product,
 #footer {
     scroll-margin-top: 120px;
 }
@@ -41,6 +46,12 @@ body {
 .ypmd-intro-box,
 .your-contribution,
 .strengthening-comm,
+.our-product-hero,
+.aroma,
+.cooking,
+.quality,
+.csr,
+.pacakge,
 footer {
     position: relative;
     top: 71px;
@@ -63,15 +74,16 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #fafafa;
-    padding: 20px 80px;
+    padding: 20px 60px;
     box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.25);
 }
 
 .nav-logo {
     background: url("./img/zera-logo-nav.png");
-    width: 90px;
-    height: 60px;
+    width: 80px;
+    height: 45px;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 20px;
 }
 
@@ -79,7 +91,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     list-style: none;
     animation: initial-opacity 2s ease;
 }
@@ -138,9 +150,9 @@ nav {
     background-repeat: no-repeat;
     position: absolute;
     right: 25px;
-    top: 13px;
-    width: 72px;
-    height: 44px;
+    top: 18px;
+    width: 67px;
+    height: 35px;
 }
 
 .mobile-nav-logo > a {
@@ -154,7 +166,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 28px;
+    top: 30px;
     left: 25px;
     z-index: 93;
     -webkit-user-select: none;
@@ -177,7 +189,7 @@ nav {
     height: 2px;
     margin-bottom: 5px;
     position: relative;
-    background: #2d2d2d;
+    background: #C29252;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0px;
@@ -609,7 +621,7 @@ nav {
     font-weight: 500;
 }
 
-/* -------- YPMD Set-up -------- */
+/* -------- YPMD Page Set-up -------- */
 
 .ypmd-hero-container {
     background-image: url('./img/ypmd-hero-img.png');
@@ -877,6 +889,298 @@ nav {
 
 .sc-box-text > p {
     font-weight: 600;
+}
+
+/* -------- Our Product Page Set-up-------- */
+
+/* -------- Default -------- */
+.our-product-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.our-product-des {
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+/* -------- Our Product Hero Set-up -------- */
+
+.our-product-hero-container {
+    background-image: url('./img/our-product-hero-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+.our-product-hero-message {
+    font-size: 3.5rem;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+/* -------- Aroma Set-up -------- */
+
+.aroma-container {
+    padding: 20px;
+    display: flex;
+    background-color: #edecec;
+}
+
+.aroma-img {
+    background: url('./img/aroma-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 570px;
+    height: 570px;
+}
+
+.aroma-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.circle-btn-1 {
+    position: relative;
+    top: 170px;
+    left: 220px;
+}
+
+.circle-btn-2 {
+    position: relative;
+    top: 350px;
+    left: 280px;
+}
+
+/* -------- Cooking Set-up -------- */
+
+.cooking-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cooking-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.cooking-img {
+    background: url('./img/cooking-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 570px;
+    height: 570px;
+}
+
+.circle-btn-3 {
+    position: relative;
+    top: 140px;
+    left: 150px;
+}
+
+.circle-btn-4 {
+    position: relative;
+    top: 300px;
+    left: 270px;
+}
+
+/* -------- Quality Set-up -------- */
+
+.quality-container {
+    padding: 20px;
+    display: flex;
+    background-color: #eee;
+}
+
+.quality-img {
+    background: url('./img/quality-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 570px;
+    height: 570px;
+}
+
+.quality-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.circle-btn-5 {
+    position: relative;
+    top: 160px;
+    left: 230px;
+}
+
+.circle-btn-6 {
+    position: relative;
+    top: 290px;
+    left: 300px;
+}
+
+/* -------- CSR Set-up -------- */
+
+.csr-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.csr-img {
+    background: url('./img/csr-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 570px;
+    height: 570px;
+}
+
+.csr-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.circle-btn-7 {
+    position: relative;
+    top: 250px;
+    left: 280px;
+}
+
+.circle-btn-8 {
+    position: relative;
+    top: 350px;
+    left: 1000px;
+}
+
+/* -------- Package Set-up -------- */
+
+.package-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.package-img {
+    background: url('./img/package-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 570px;
+    height: 570px;
+    background-color: #EAC97E;
+}
+
+.package-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.circle-btn-9 {
+    position: relative;
+    top: 250px;
+    left: 280px;
+    z-index: 90;
+}
+
+.circle-btn-10 {
+    position: relative;
+    top: 350px;
+    left: 280px;
+}
+
+/* -------- Circle btn Set-up -------- */
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.svg-container {
+    width: 54px; /* Initial width */
+    height: 54px; /* Initial height */
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for size */
+}
+
+.svg-container:hover {
+    width: 54px; /* Updated hover state width to 45px */
+    height: 54px; /* Updated hover state height to 45px */
+}
+
+.group {
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.svg-container:hover .group {
+    opacity: 0.9; /* Hover state opacity */
+}
+
+.outer-circle {
+    transition: r 0.3s ease, opacity 0.3s ease, stroke-width 0.3s ease; /* Smooth transitions for circle attributes */
+}
+
+.svg-container:hover .outer-circle {
+    r: 25.787; /* Hover state radius - adjust if needed */
+    opacity: 0.5; /* Hover state opacity */
+    stroke: #fafafa; /* Hover state stroke color */
+    stroke-width: 2; /* Hover state stroke width */
+}
+
+.inner-circle {
+    transition: fill 0.3s ease, r 0.3s ease; /* Smooth transitions for fill color and radius */
+}
+
+.svg-container:hover .inner-circle {
+    fill: #fafafa; /* Hover state fill color */
+    r: 8; /* Hover state radius - adjust if needed */
+}
+
+/* -------- Text Fade-in Effect Set-up -------- */
+
+#circle-btn-1,
+#circle-btn-2,
+#circle-btn-3,
+#circle-btn-4,
+#circle-btn-5,
+#circle-btn-6,
+#circle-btn-7,
+#circle-btn-8 {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+#circle-btn-1.visible,
+#circle-btn-2.visible,
+#circle-btn-3.visible,
+#circle-btn-4.visible,
+#circle-btn-5.visible,
+#circle-btn-6.visible,
+#circle-btn-7.visible,
+#circle-btn-8.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 /* -------- Footer Set-up V.2-------- */
@@ -1201,6 +1505,64 @@ footer {
 
 /* -------- Resposive Adjustment ---------- */
 
+@media only screen and (max-width: 1180px) {
+/*-----Product Page-----*/
+    .aroma-img,
+    .cooking-img,
+    .quality-img,
+    .csr-img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .circle-btn-1 {
+        position: relative;
+        top: 140px;
+        left: 190px;
+        z-index: 90;
+    }
+    
+    .circle-btn-2 {
+        position: relative;
+        top: 290px;
+        left: 250px;
+    }
+
+    .circle-btn-3 {
+        position: relative;
+        top: 110px;
+        left: 130px;
+        z-index: 90;
+    }
+    
+    .circle-btn-4 {
+        position: relative;
+        top: 255px;
+        left: 240px;
+    }
+
+    .circle-btn-5 {
+        position: relative;
+        top: 130px;
+        left: 200px;
+        z-index: 90;
+    }
+    
+    .circle-btn-6 {
+        position: relative;
+        top: 250px;
+        left: 260px;
+    }
+
+    .circle-btn-7 {
+        position: relative;
+        top: 220px;
+        left: 250px;
+    }
+
+}
+
+
 @media only screen and (max-width: 1105px) {
 /*-----Mission-----*/
     .mission-img {
@@ -1222,6 +1584,16 @@ footer {
     
 }
 
+@media only screen and (max-width: 1040px) {
+    /*-----Product Page-----*/
+        .aroma-container-right,
+        .cooking-container-left,
+        .quality-container-right,
+        .csr-container-left {
+            padding: 40px 60px;
+        }
+    }
+
 @media only screen and (max-width: 980px) {
 /*-----Our Product-----*/
     .product-back-img {
@@ -1238,6 +1610,7 @@ footer {
     .product-index-right-textbox > ul > li {
         font-size: 0.75rem;
     } 
+
 /*----- Value Prop -----*/
     .value-prop-main-container {
         padding-right: 20px;
@@ -1248,6 +1621,60 @@ footer {
     
     .value-text > p:last-child {
         font-size: 0.85rem;
+    }
+
+/*-----Product Page-----*/
+    .our-product-title {
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+    }
+
+    .our-product-des {
+        font-size: 1rem;
+        line-height: 150%;
+    }   
+
+    .aroma-img,
+    .cooking-img,
+    .quality-img,
+    .csr-img {
+        width: 420px;
+        height: 420px;
+    }
+
+    .circle-btn-1 {
+        top: 120px;
+        left: 150px;
+    }
+
+    .circle-btn-2 {
+        top: 220px;
+        left: 210px;
+    }
+
+    .circle-btn-3 {
+        top: 80px;
+        left: 100px;
+    }
+
+    .circle-btn-4 {
+        top: 200px;
+        left: 200px;
+    }
+
+    .circle-btn-5 {
+        top: 100px;
+        left: 170px;
+    }
+
+    .circle-btn-6 {
+        top: 200px;
+        left: 210px;
+    }
+
+    .circle-btn-7 {
+        top: 180px;
+        left: 210px;
     }
 }
 
@@ -1291,6 +1718,76 @@ footer {
     .sc-box-imges {
         flex-direction: column;
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+/*-----Product Page-----*/
+    .our-product-des {
+        font-size: 0.85rem;
+    }
+
+    .aroma-container,
+    .quality-container {
+        flex-direction: column;
+        font-weight: 500;
+    }
+
+    .cooking-container,
+    .csr-container {
+        flex-direction: column-reverse;
+    }
+
+    .aroma-img,
+    .cooking-img,
+    .quality-img,
+    .csr-img {
+        width: 100%;
+        height: 570px;
+        background-position: center;
+    }
+
+    .aroma-container-right,
+    .cooking-container-left,
+    .quality-container-right,
+    .csr-container-left {
+        padding: 20px 20px 10px;
+    }
+
+    .circle-btn-1 {
+        top: 130px;
+        left: 230px;
+        
+    }
+
+    .circle-btn-2 {
+        top: 420px;
+        left: 300px;
+    }
+
+    .circle-btn-3 {
+        top: 100px;
+        left: 120px;
+    }
+
+    .circle-btn-4 {
+        top: 350px;
+        left: 300px;
+    }
+
+    .circle-btn-5 {
+        top: 100px;
+        left: 190px;
+    }
+
+    .circle-btn-6 {
+        top: 270px;
+        left: 280px;
+    }
+
+    .circle-btn-7 {
+        top: 180px;
+        left: 210px;
     }
 }
 
@@ -1454,6 +1951,11 @@ footer {
         display: block;
         animation: initial-opacity 1s ease;
     }
+
+    #menu {
+        width: 360px;
+        height: 1000px;
+    }
 }
 
 @media only screen and (max-width: 665px) {
@@ -1532,9 +2034,9 @@ footer {
 @media only screen and (max-width: 517px) {
 /*-----Default-----*/
 #menuToggle {
-    display: none;
+    display: block;
 }
-
+/*
 .mobile-nav {
     display: flex;
     justify-content: center;
@@ -1546,7 +2048,7 @@ footer {
     top: 0;
     right: 0;
 }
-
+*/
 /*-----index Hero-----*/
     .index-hero-container {
         padding: 5.73vw;
@@ -1784,6 +2286,12 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
+/*-----Default-----*/
+    #menu {
+        width: 330px;
+        height: 1000px;
+    }
+
 /*-----YPMD-----*/
     .ypmd-hero-message {
         font-size: 2.5rem;
@@ -1839,6 +2347,73 @@ footer {
 
     .footer-info-box-right-text-1 > h4 {
         font-size: 1.25rem;
+    }
+
+/*-----Product Page-----*/
+    .our-product-hero-message {
+        font-size: 2.5rem;
+    }
+
+    .our-product-hero-container {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+/*
+    .our-product-title,
+    .our-product-des {
+        text-align: center;
+    }
+*/
+
+    .aroma-img,
+    .cooking-img,
+    .quality-img,
+    .csr-img {
+        height: 370px;
+    }
+
+    .aroma-container-right,
+    .cooking-container-left,
+    .quality-container-right,
+    .csr-container-left {
+        padding: 15px 0 5px;
+    }
+
+    .circle-btn-1 {
+        top: 60px;
+        left: 110px;
+        
+    }
+
+    .circle-btn-2 {
+        top: 200px;
+        left: 200px;
+    }
+
+    .circle-btn-3 {
+        top: 80px;
+        left: 100px;
+    }
+
+    .circle-btn-4 {
+        top: 180px;
+        left: 220px;
+    }
+
+    .circle-btn-5 {
+        top: 80px;
+        left: 150px;
+    }
+
+    .circle-btn-6 {
+        top: 160px;
+        left: 230px;
+    }
+
+    .circle-btn-7 {
+        top: 170px;
+        left: 190px;
     }
 }
 
@@ -1983,4 +2558,63 @@ footer {
     .contact-info-right-textbox-2 > P {
         font-size: 0.675rem;
     }
+
+/*----- Product Page-----*/
+    .our-product-hero-message {
+        font-size: 1.75rem;
+    }
+
+    .our-product-hero-container {
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .aroma-img,
+    .cooking-img,
+    .quality-img,
+    .csr-img {
+        height: 370px;
+    }
+
+    .circle-btn-1 {
+        top: 60px;
+        left: 50px;
+        
+    }
+
+    .circle-btn-2 {
+        top: 200px;
+        left: 130px;
+    }
+
+    .circle-btn-3 {
+        top: 80px;
+        left: 50px;
+    }
+
+    .circle-btn-4 {
+        top: 180px;
+        left: 130px;
+    }
+
+    .circle-btn-5 {
+        top: 80px;
+        left: 80px;
+    }
+
+    .circle-btn-6 {
+        top: 160px;
+        left: 140px;
+    }
+
+    .circle-btn-7 {
+        top: 170px;
+        left: 120px;
+    }
+
+/*-----Footer-----*/
+    .footer-info-container {
+        padding: 20px;
+    }
+
 }

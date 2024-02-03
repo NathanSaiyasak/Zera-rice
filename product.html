@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resourse/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./resourse/img/zera-favicon.png">
+    <title>Our Product</title>
+</head>
+<body id="our-product">
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="./index.html">
+                    <div class="nav-logo"></div>
+                </a>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="./index.html#list-box" class="nav-a">About</a></li>
+                        <li><a href="#our-product-hero" class="nav-a">Our Product</a></li>
+                        <li><a href="#our-product-footer" class="nav-a">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div role="navigation" class="mobile-nav">
+            <div class="mobile-nav-container">
+                <div class="mobile-nav-logo">
+                    <a href="./index.html"></a>
+                </div>
+                <div id="menuToggle">
+                    <input type="checkbox" id="prevent"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu" class="scrollable">
+                        <li><a href="./index.html#list-box" class="nav-b">About</a></li>
+                        <li><a href="#our-product-hero" class="nav-b">Our Product</a></li>
+                        <li><a href="#our-product-footer" class="nav-b">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="our-product-hero" id="our-product-hero">
+        <div class="our-product-hero-container">
+            <div class="our-product-hero-message-box fade-in">
+                <h1 class="our-product-hero-message">Thai <br> Premium <br> Jasmine Rice</h1>
+            </div>
+    </section>
+    <section class="aroma">
+        <div class="aroma-container">
+            <div class="aroma-container-left">
+                <div class="aroma-img">
+                    <div class="circle-btn circle-btn-1">
+                        <button onclick="btnFunction1()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                    <div class="circle-btn circle-btn-2">
+                        <button onclick="btnFunction2()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="aroma-container-right">
+                <div class="aroma-container-text aroma-text-1" id="circle-btn-1">
+                    <h4 class="our-product-title">Distinctive Aroma and Flavor</h4>
+                    <p class="our-product-des">Thai Jasmine rice is renowned for its naturally fragrant aroma, often described as floral and nutty. This distinct scent enhances the sensory experience of meals. The flavor is also subtly sweet and rich, making it a delightful addition to a variety of dishes. This unique taste profile is a standout feature compared to other types of rice, which may be more neutral in flavor.</p>
+                </div>
+                <div class="aroma-container-text aroma-text-2" id="circle-btn-2">
+                    <h4 class="our-product-title">Texture</h4>
+                    <p class="our-product-des">When cooked, Thai Jasmine rice has a slightly sticky yet tender texture, making it ideal for dishes where the rice needs to hold together, such as in stir-fries, sushi, and Asian-inspired salads. Its texture is a perfect balance between the fluffiness of long-grain rice and the stickiness of short-grain varieties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cooking">
+        <div class="cooking-container">
+            <div class="cooking-container-left">
+                <div class="cooking-container-text cooking-text-1" id="circle-btn-3">
+                    <h4 class="our-product-title">Nutritional Value</h4>
+                    <p class="our-product-des">Like other types of rice, Thai Jasmine rice provides a good source of carbohydrates, essential for energy. It also contains some protein, minimal fat, and is gluten-free, making it a suitable option for people with gluten sensitivities or celiac disease. Brown Jasmine rice, in particular, offers additional nutritional benefits, including more fiber, vitamins, and minerals, compared to its white counterpart.</p>
+                </div>
+                <div class="cooking-container-text cooking-text-2" id="circle-btn-4">
+                    <h4 class="our-product-title">Versatility in Cooking</h4>
+                    <p class="our-product-des">Thai Jasmine rice is incredibly versatile and can be used in a wide range of cuisines. It's not just limited to Thai or Asian dishes; its subtle flavor complements many styles of cooking, from Mediterranean to American. It can be served as a side dish, used in pilafs, or included in soups and casseroles.</p>
+                </div>
+            </div>
+            <div class="cooking-container-right">
+                <div class="cooking-img">
+                    <div class="circle-btn circle-btn-3">
+                        <button onclick="btnFunction3()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                    <div class="circle-btn circle-btn-4">
+                        <button onclick="btnFunction4()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quality">
+        <div class="quality-container">
+            <div class="quality-container-left">
+                <div class="quality-img">
+                    <div class="circle-btn circle-btn-5">
+                        <button onclick="btnFunction5()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                    <div class="circle-btn circle-btn-6">
+                        <button onclick="btnFunction6()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="quality-container-right">
+                <div class="quality-container-text quality-text-1" id="circle-btn-5">
+                    <h4 class="our-product-title">Exceptional Cultivation Practices</h4>
+                    <p class="our-product-des">In Northeastern Thailand, our rice benefits from optimal growing conditions, including fertile soils and a favorable climate. This region's expert farmers utilize sustainable and traditional farming techniques honed over centuries to cultivate rice of the highest quality. These practices ensure that each grain is nurtured to perfection, delivering unmatched flavor and texture.</p>
+                </div>
+                <div class="quality-container-text quality-text-2" id="circle-btn-6">
+                    <h4 class="our-product-title">Generational Expertise</h4>
+                    <p class="our-product-des">The rice that graces your table is the result of generations of passion and expertise. Harvested by local Thai communities with deep-rooted traditions in rice farming, our rice carries with it the heritage and dedication of families who have been cultivating these lands for countless generations. This commitment to excellence from sowing to harvesting guarantees the premium quality of our rice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="csr">
+        <div class="csr-container">
+            <div class="csr-container-left">
+                <div class="csr-container-text csr-text-1" id="circle-btn-7">
+                    <h4 class="our-product-title">At NATHAN</h4>
+                    <p class="our-product-des">We are deeply committed to socially responsible practices that honor and support the rich heritage of Thai culture and improve the lives of its people. Choosing Zera rice is not just a purchase—it's a pledge to contribute positively to the well-being of our Thai agricultural communities, ensuring their growth, prosperity, and sustainable future.</p>
+                </div>
+                <div class="csr-container-text csr-text-2" id="circle-btn-8">
+                    <h4 class="our-product-title">Versatility in Cooking</h4>
+                    <p class="our-product-des">Thai Jasmine rice is incredibly versatile and can be used in a wide range of cuisines. It's not just limited to Thai or Asian dishes; its subtle flavor complements many styles of cooking, from Mediterranean to American. It can be served as a side dish, used in pilafs, or included in soups and casseroles.</p>
+                </div>
+            </div>
+            <div class="csr-container-right">
+                <div class="csr-img">
+                    <div class="circle-btn circle-btn-7">
+                        <button onclick="btnFunction7()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                    <div class="circle-btn circle-btn-8">
+                        <button onclick="btnFunction8()">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+                                    <g class="group" opacity="0.7">
+                                        <circle class="outer-circle" opacity="0.3" cx="32" cy="32" r="25.787" fill="#333333" stroke="#FAFAFA" stroke-width="2.42605"/>
+                                        <circle class="inner-circle" cx="32.0002" cy="32.0002" r="11.7619" fill="#EBCA7F"/>
+                                    </g>
+                                </svg>
+                            </div>                         
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer our-product-footer" id="our-product-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-info-container">
+                    <div class="ntc-logo"></div>
+                    <div class="footer-info-main">
+                        <div class="footer-info-box-left">
+                            <div class="footer-info-box-left-text-1">
+                                <h4>Nathan Trading Company Limited</h4>
+                                <p>Owner & Manufacturer of Zera</p>
+                            </div>
+                            <div class="footer-info-box-left-text-2">
+                                <h4>Head Office</h4>
+                                <p>58 Moo 12, Palan Sub-District, <br>Nathan District, Ubon Ratchathani <br>34170 Thailand</p>
+                            </div>
+                        </div>
+                        <div class="footer-info-box-right">
+                            <div class="footer-info-box-right-text-1">
+                                <h4>Sales Inquiry</h4>
+                                <div class="footer-contact-info">
+                                    <div class="footer-contact-info-container">
+                                        <a href="mailto:sales@nathantrad.com">
+                                            <div class="footer-contact-info-box-1">
+                                                <div class="footer-email-icon"></div>
+                                                <p>sales@nathantrad.com</p>
+                                            </div>
+                                        </a>
+                                        <a href="https://wa.me/0982492362" target="_blank">
+                                            <div class="footer-contact-info-box-2">
+                                                <div class="footer-whatsapp-icon"></div>
+                                                <p>(+66) 98-249-2362</p>
+                                            </div>
+                                        </a>
+                                        <a href="https://line.me/ti/p/drZA25r5i5" target="_blank">
+                                            <div class="footer-contact-info-box-3">
+                                                <div class="footer-line-icon"></div>
+                                                <p>ID: nathansk</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-mark">
+                    <p><em>© 2024 Nathan Trading Company Limited All rights reserved.</em></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./resourse/js/script.js"></script>
+</body>
+</html>
