@@ -745,8 +745,9 @@ nav {
 }
 
 .yc-box-text > p {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 40px;
+    line-height: 140%;
 }
 
 .btn > a {
